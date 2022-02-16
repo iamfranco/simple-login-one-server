@@ -60,4 +60,4 @@ Later if we make changes to the frontend, ie within the `client/` folder, be sur
 
 ## Deploy onto heroku
 
-Before deploying to heroku, be sure to update the `.env` file within the `client/` folder so that it points to the site URI.
+Before deploying to heroku, be sure to update the `.env` file within the `client/` folder so that it points to the site URI, and then run `npm run build`.
