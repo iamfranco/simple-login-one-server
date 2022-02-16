@@ -96,10 +96,16 @@ function setRoutes(app, User, passport) {
   })
 
   app.get("/api/getuser", (req, res) => {
-    res.send(req.user)
+    const user = {
+      displayName: req.user.displayName,
+      someNumber: req.user.someNumber,
+      googleId: req.user.googleId,
+      username: req.user.username
+    }
+    res.send(user)
   })
 
-  app.post("/api/setUser", ensureAuthenticated, (req, res) => {
+  app.post("/api/setuser", ensureAuthenticated, (req, res) => {
     const id = req.user._id
     User.findOneAndUpdate({ _id: id }, req.body, err => {
       if (err)

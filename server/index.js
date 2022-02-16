@@ -2,7 +2,6 @@ require("dotenv").config()
 const express = require("express")
 const passport = require("passport")
 const session = require("express-session")
-const cors = require("cors")
 
 const connectDB = require("./connectDB")
 const auth = require("./auth")
@@ -13,7 +12,6 @@ const app = express()
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-// app.use(cors({ origin: process.env.CLIENT_URI, credentials: true }))
 
 app.set("trust proxy", 1)
 
@@ -22,7 +20,6 @@ const sessionStore = connectDB.sessionStore
 
 auth.setup(passport, User) // passport JS strategies (local and Google)
 
-// const isSiteRemoteSecure = process.env.URI_IS_REMOTE_SECURE === "TRUE"
 app.use(
   session({
     secret: process.env.SESSION_SECRET,
@@ -31,12 +28,6 @@ app.use(
     store: sessionStore,
     cookie: {
       maxAge: 7 * 24 * 60 * 60 * 1000 // 1 week
-
-      // if site is remote and secure...
-      // ...(isSiteRemoteSecure && {
-      //   secure: true,
-      //   sameSite: "none"
-      // })
     }
   })
 )

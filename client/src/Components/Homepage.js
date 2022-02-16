@@ -24,7 +24,7 @@ function Homepage() {
 
     axios
       .post(
-        `${process.env.REACT_APP_BACKEND_URI}/setUser`,
+        `${process.env.REACT_APP_BACKEND_URI}/setuser`,
         {
           someNumber: newNumber
         },

@@ -23,7 +23,6 @@ There are 2 `.env` files:
 
 ```
 CLIENT_URI=http://localhost:5000
-URI_IS_REMOTE_SECURE=FALSE
 MONGO_URI=
 SESSION_SECRET=
 GOOGLE_CLIENT_ID=
