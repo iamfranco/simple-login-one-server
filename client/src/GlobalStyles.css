@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.max-width-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.terms {
+  text-align: center;
+  font-size: 13px;
+}
+
+.white-text {
+  color: white;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+input {
+  font-family: "Inter", sans-serif;
+}
+
+.bigHeader {
+  font-size: 36px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.formError {
+  height: 20px;
+  font-size: 14px;
+}
+
+.wide-text-input {
+  font-size: 14px;
+  width: 100%;
+  border: 2px solid black;
+  outline: none;
+  padding: 15px 12px;
+  margin-bottom: 15px;
+}
+
+.wide-button {
+  background: #fa3051;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  outline: none;
+  border: none;
+}
+
+.back-button {
+  background-image: url("./assets/backButton.svg");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: 20% center;
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.transparent-button {
+  color: #fff;
+  background: none;
+  border: 2px solid #fff;
+}
+
+header {
+  /* background-color: #f00; */
+  height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+header > .hamburger {
+  width: 30px;
+  height: 30px;
+  background-image: url("./assets/hamburger.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+header > .username {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#menu_background {
+  background: none;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s ease all;
+}
+#menu_background.show {
+  background: rgba(0, 0, 0, 0.3);
+  pointer-events: all;
+}
+
+#menu {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding-left: 10px;
+  padding-right: 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(-100%);
+  transition: 0.2s ease all;
+}
+
+#menu.show {
+  transform: translateX(0);
+}
+
+#menu .x {
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  background-image: url("./assets/x.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+#menu_top_items {
+  margin-top: 40px;
+  list-style: none;
+  padding: 0;
+  font-size: 24px;
+}
+
+#menu_top_items li {
+  margin-bottom: 20px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.belowHeader {
+  padding: 0 10px;
+  padding-top: 50px;
+}

@@ -1,0 +1,65 @@
+#loggedOut {
+  background-image: url("./../assets/loggedOutBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.verticalCenter {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.appName {
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 100px;
+}
+
+.googleLogo {
+  height: 20px;
+  margin-right: 10px;
+}
+
+#googleButton {
+  background-color: #fff;
+  color: #fa3051;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px;
+  font-weight: 700;
+}
+
+.googleText {
+  margin-right: 15px;
+}
+
+.orContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 30px 0;
+}
+
+.line {
+  background-color: #fff;
+  width: 100%;
+  height: 1px;
+  display: inline-block;
+}
+
+.or {
+  color: #fff;
+  font-weight: 600;
+  margin: 0 5px;
+  font-size: 14px;
+  width: 20px;
+  display: inline-block;
+}
