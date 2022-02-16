@@ -5,14 +5,6 @@ const clientHomepage = process.env.CLIENT_URI
 const clientLoginPage = `${clientHomepage}/login`
 
 function setRoutes(app, User, passport) {
-  // if http, then redirect to https
-  if (process.env.NODE_ENV === "production") {
-    app.use((req, res, next) => {
-      if (req.header("x-forwarded-proto") !== "https") res.redirect(`https://${req.header("host")}${req.url}`)
-      else next()
-    })
-  }
-
   app.get("/api", (req, res) => {
     res.send("Backend is working")
   })
