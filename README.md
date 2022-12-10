@@ -3,7 +3,7 @@
 This is the one server implementation of the simple login app (MERN stack), where
 both frontend and backend are hosted on the same server.
 
-[[Demo Link]](https://francochanco-simple-login-one.herokuapp.com)
+[[Demo Link]](https://lapel-ray.cyclic.app)
 
 ## Step 1: Install node modules
 
